@@ -26,10 +26,13 @@ String questions = JOptionPane.showInputDialog("How many nickels do you have?");
  int quarters = Integer.parseInt(q3);
 		// Calculate how much money the user has and save it in a double variable 
 double money;
-money = nickels + dimes + quarters;
+double nickel = 0.5;
+double dime = 0.10;
+float quarter = (float)0.25;
+money = nickels*.5 + dimes*.10 + quarters*.25;
 
 		// Tell the user how much money they have
-JOptionPane.showMessageDialog(null, money);
+JOptionPane.showMessageDialog(null, " You have $" + money);
 	}
 }
 

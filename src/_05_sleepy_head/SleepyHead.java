@@ -18,7 +18,13 @@ public class SleepyHead {
          * Ask the user for these values using a confirm dialog like the one below
          * JOptionPane.showConfirmDialog(null, "Is it a weekday?", "Sleepy Head", JOptionPane.YES_NO_OPTION);
          */
-    
+     int test = JOptionPane.showConfirmDialog(null, "Is it a weekday?", "Sleepy Head", JOptionPane.YES_NO_OPTION);
+     if (test == JOptionPane.NO_OPTION ) {
+		JOptionPane.showMessageDialog(null, "Asleep");
+	}
+     else if(test == JOptionPane.YES_OPTION) {
+    	 JOptionPane.showMessageDialog(null, "Get up lazybones!");
+     }
 
 
         /*
