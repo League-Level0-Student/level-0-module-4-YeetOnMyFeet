@@ -3,7 +3,7 @@ import javax.swing.JOptionPane;
 public class testscores {
 public static void main(String[] args) {
 	String test = JOptionPane.showInputDialog("What score did you get on your test?");
-			int score = Integer.parseInt(test);
+			float score = Float.parseFloat(test);
 			if (score >= 90) {
 				JOptionPane.showMessageDialog(null, "You must've studied a lot for that test!");
 			}
